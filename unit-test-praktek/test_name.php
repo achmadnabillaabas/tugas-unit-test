@@ -4,18 +4,18 @@ require_once "Validator.php";
 
 // Test Case 1: Nama valid (nama lengkap Anda)
 try {
-    $result = validateName("Azka Wildan");
-    echo "PASS: Nama 'Azka Wildan' diterima<br>";
+    $result = validateName("Achmad Nabilla");
+    echo "PASS: Nama 'Achmad Nabilla' diterima<br>";
 } catch (Exception $e) {
-    echo "FAIL: Nama 'Azka Wildan' tidak diterima. Error: " . $e->getMessage() . "<br>";
+    echo "FAIL: Nama 'Ahmad Nabilla' tidak diterima. Error: " . $e->getMessage() . "<br>";
 }
 
 // Test Case 2: Nama tidak valid (mengandung angka)
 try {
-    $result = validateName("Azka123");
-    echo "PASS: Nama 'Azka123' diterima<br>";
+    $result = validateName("Achmad445566");
+    echo "PASS: Nama 'Achmad123' diterima<br>";
 } catch (Exception $e) {
-    echo "FAIL: Nama 'Azka123' tidak diterima. Error: " . $e->getMessage() . "<br>";
+    echo "FAIL: Nama 'Achmad445566' tidak diterima. Error: " . $e->getMessage() . "<br>";
 }
 
 // Test Case 3: Nama kosong
