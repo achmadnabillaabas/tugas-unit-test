@@ -4,7 +4,7 @@
 
 function validateAge($age) {
     if (!is_numeric($age)) {
-        throw new InvalidArgumentException("Umur harus berupa angka");
+        throw new InvalidArgumentException("Umur harus menggunakan angka");
     }
     if ($age < 0) {
         throw new InvalidArgumentException("Umur tidak boleh negatif");
