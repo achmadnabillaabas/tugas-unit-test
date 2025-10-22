@@ -6,7 +6,7 @@ include("config/config.php");
 $api_key="a5cc5cdfc7fb41ac91f432303bc26607";
  
 // URL API 
-$url="https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=".$api_key;
+$url="https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=".$api_key;
  
 // menyimpan hasil dalam variabel
 $data=http_request_get($url);
